@@ -17,12 +17,13 @@
   ],
   "require": {
     "php": ">=5.3.3",
-    "symfony/framework-bundle":        "~2.3",
+    "symfony/framework-bundle":        "~2.6",
+    "symfony/finder": "~2.6",
     "stof/doctrine-extensions-bundle": "1.2.*@dev"
   },
-  "target-dir": "Mrcmorales/TyreBundle",
+  "target-dir": "MrcMorales/TyreBundle",
   "autoload": {
-    "psr-0": { "Mrcmorales\\TyreBundle": "" }
+    "psr-0": { "MrcMorales\\TyreBundle": "" }
   },
   "extra": {
     "branch-alias": {

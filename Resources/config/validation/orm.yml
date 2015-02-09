@@ -1,0 +1,69 @@
+MrcMorales\TyreBundle\Entity\Brand:
+    properties:
+        name:
+            - NotBlank: ~
+
+MrcMorales\TyreBundle\Entity\Diameter:
+    properties:
+        value:
+            - NotBlank: ~
+
+MrcMorales\TyreBundle\Entity\LoadIndex:
+    properties:
+        value:
+            - NotBlank: ~
+
+MrcMorales\TyreBundle\Entity\Profile:
+    properties:
+        value:
+            - NotBlank: ~
+
+MrcMorales\TyreBundle\Entity\SpeedRating:
+    properties:
+        value:
+            - NotBlank: ~
+
+MrcMorales\TyreBundle\Entity\Width:
+    properties:
+        value:
+            - NotBlank: ~
+
+MrcMorales\TyreBundle\Entity\Width:
+    properties:
+        value:
+            - NotBlank: ~
+
+MrcMorales\TyreBundle\Entity\Tyre:
+    properties:
+        name:
+            - NotBlank: ~
+        fuelClass:
+            - NotBlank: ~
+            - Regex:
+                pattern: '/^[A-G]$/'
+                message: Letter between A-G
+        wetClass:
+            - NotBlank: ~
+            - Regex:
+                pattern: '/^[A-G]$/'
+                message: Letter between A-G
+        wetClass:
+            - NotBlank: ~
+            - Regex:
+                pattern: '/^[A-G]$/'
+                message: Letter between A-G
+        noise:
+            - NotBlank: ~
+        noiseClass:
+            - NotBlank: ~
+            - Range:
+                min: 1
+                max: 3
+        winter:
+            - NotBlank: ~
+        runflat:
+            - NotBlank: ~
+        speedRating:
+            - NotBlank: ~
+        loadIndex:
+            - NotBlank: ~

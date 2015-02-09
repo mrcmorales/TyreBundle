@@ -1,0 +1,44 @@
+MrcMorales\TyreBundle\Entity\Tyre:
+    type: mappedSuperclass
+    gedmo:
+      soft_deleteable:
+        field_name: deletedAt
+        time_aware: false
+    fields:
+      createdAt:
+        type: datetime
+        gedmo:
+          timestampable:
+            on: create
+      updatedAt:
+        type: datetime
+        nullable: true
+        gedmo:
+          timestampable:
+            on: update
+      deletedAt:
+        type: datetime
+        nullable: true
+      ean:
+        type: bigint
+        nullable: true
+      name:
+        type: string
+        length: 255
+      description:
+        type: text
+      winter:
+        type: boolean
+      runflat:
+        type: boolean
+      fuelClass:
+        type: string
+        length: 255
+      wetClass:
+        type: string
+        length: 255
+      noise:
+        type: integer
+      noiseClass:
+        type: string
+        length: 255
