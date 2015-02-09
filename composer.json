@@ -1,0 +1,32 @@
+{
+  "name": "mrcmorales/tyre-bundle",
+  "description": "Tires Database system",
+  "keywords": ["tyre, tires"],
+  "homepage": "https://github.com/mrcmorales/Tyrebundle",
+  "type": "symfony-bundle",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Marc Morales Valldepérez",
+      "email": "marcmorales83@gmail.com"
+    },
+    {
+      "name": "Symfony Community",
+      "homepage": "https://github.com/mrcmorales/Tyrebundle/contributors"
+    }
+  ],
+  "require": {
+    "php": ">=5.3.3",
+    "symfony/framework-bundle":        "~2.3",
+    "stof/doctrine-extensions-bundle": "1.2.*@dev"
+  },
+  "target-dir": "Mrcmorales/TyreBundle",
+  "autoload": {
+    "psr-0": { "Mrcmorales\\TyreBundle": "" }
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "master"
+    }
+  }
+}
