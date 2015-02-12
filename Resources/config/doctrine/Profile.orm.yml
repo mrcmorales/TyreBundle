@@ -22,4 +22,3 @@ MrcMorales\TyreBundle\Entity\Profile:
       value:
         type: string
         length: 255
-

@@ -6,9 +6,9 @@
  * file that was distributed with this source code.
  *
  * Feel free to edit as you please, and have fun.
- * 
- * @author: Marc Morales Valldepérez <marcmorales83@gmail.com> 
- * 
+ *
+ * @author: Marc Morales Valldepérez <marcmorales83@gmail.com>
+ *
  * Date: 10/02/15
  * Time: 10:57
  */

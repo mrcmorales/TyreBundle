@@ -16,7 +16,6 @@ namespace MrcMorales\TyreBundle\DependencyInjection\Compiler;
 
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Compiler\CompilerPassInterface;
-use Symfony\Component\Config\Resource\FileResource;
 
 /**
  * Registers the additional validators according to the storage
@@ -35,7 +34,7 @@ class ValidationPass implements CompilerPassInterface
         }
 
         $storage = $container->getParameter('mrc_morales.tyre.storage');
-        $validationFile = __DIR__ . '/../../Resources/config/validation/' . $storage . '.yml';
+        $validationFile = __DIR__.'/../../Resources/config/validation/'.$storage.'.yml';
 
         if ($container->hasDefinition('validator.builder')) {
             // Symfony 2.5+

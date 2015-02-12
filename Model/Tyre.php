@@ -309,7 +309,6 @@ class Tyre extends AbstractBase
         return $this;
     }
 
-
     /**
      * @return string
      */

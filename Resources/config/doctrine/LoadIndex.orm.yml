@@ -26,4 +26,3 @@ MrcMorales\TyreBundle\Entity\LoadIndex:
         type: string
         length: 255
         nullable: true
-

@@ -22,4 +22,3 @@ MrcMorales\TyreBundle\Entity\Width:
       value:
         type: string
         length: 255
-

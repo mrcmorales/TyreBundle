@@ -15,7 +15,6 @@ class TyreBundle extends Bundle
         $container->addCompilerPass(new ValidationPass());
     }
 
-
     public function getContainerExtension()
     {
         return new MrcMoralesTyreExtension();
