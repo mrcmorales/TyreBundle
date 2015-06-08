@@ -1,3 +1,8 @@
+MrcMorales\TyreBundle\Entity\Category:
+    properties:
+        name:
+            - NotBlank: ~
+
 MrcMorales\TyreBundle\Entity\Brand:
     properties:
         name:
