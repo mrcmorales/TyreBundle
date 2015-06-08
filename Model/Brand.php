@@ -25,6 +25,11 @@ class Brand extends AbstractBase
     protected $name;
 
     /**
+     * @var Category
+     */
+    protected $category;
+
+    /**
      * @return string
      */
     public function getName()
@@ -40,6 +45,26 @@ class Brand extends AbstractBase
     public function setName($name)
     {
         $this->name = $name;
+
+        return $this;
+    }
+
+    /**
+     * @return Category
+     */
+    public function getCategory()
+    {
+        return $this->category;
+    }
+
+    /**
+     * @param Category $category
+     *
+     * @return Brand
+     */
+    public function setCategory(Category $category)
+    {
+        $this->category = $category;
 
         return $this;
     }
