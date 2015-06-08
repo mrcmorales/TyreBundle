@@ -20,6 +20,11 @@ namespace MrcMorales\TyreBundle\Model;
 class Tyre extends AbstractBase
 {
     /**
+     * @var Category
+     */
+    protected $category;
+
+    /**
      * @var integer
      */
     protected $ean;
@@ -88,6 +93,26 @@ class Tyre extends AbstractBase
      * @var string
      */
     protected $wetClass;
+
+    /**
+     * @return Category
+     */
+    public function getCategory()
+    {
+        return $this->category;
+    }
+
+    /**
+     * @param Category $category
+     *
+     * @return Tyre
+     */
+    public function setCategory(Category $category)
+    {
+        $this->category = $category;
+
+        return $this;
+    }
 
     /**
      * @return string
