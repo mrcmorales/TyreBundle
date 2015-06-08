@@ -52,11 +52,6 @@ MrcMorales\TyreBundle\Entity\Tyre:
             - Regex:
                 pattern: '/^[A-G]$/'
                 message: Letter between A-G
-        wetClass:
-            - NotBlank: ~
-            - Regex:
-                pattern: '/^[A-G]$/'
-                message: Letter between A-G
         noise:
             - NotBlank: ~
         noiseClass:
