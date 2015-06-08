@@ -38,6 +38,11 @@ MrcMorales\TyreBundle\Entity\Width:
         value:
             - NotBlank: ~
 
+MrcMorales\TyreBundle\Entity\Family:
+    properties:
+        name:
+            - NotBlank: ~
+
 MrcMorales\TyreBundle\Entity\Tyre:
     properties:
         name:

@@ -90,6 +90,11 @@ class Tyre extends AbstractBase
     protected $wetClass;
 
     /**
+     * @var Family
+     */
+    protected $family;
+
+    /**
      * @return string
      */
     public function getEan()
@@ -345,6 +350,26 @@ class Tyre extends AbstractBase
     public function setWetClass($wetClass)
     {
         $this->wetClass = $wetClass;
+
+        return $this;
+    }
+
+    /**
+     * @return Family
+     */
+    public function getFamily()
+    {
+        return $this->family;
+    }
+
+    /**
+     * @param Family $family
+     *
+     * @return Tyre
+     */
+    public function setFamily(Family $family)
+    {
+        $this->family = $family;
 
         return $this;
     }
