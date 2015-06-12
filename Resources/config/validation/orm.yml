@@ -47,6 +47,8 @@ MrcMorales\TyreBundle\Entity\Tyre:
     properties:
         name:
             - NotBlank: ~
+        sapCode:
+            - NotBlank: ~
         fuelClass:
             - NotBlank: ~
             - Regex:

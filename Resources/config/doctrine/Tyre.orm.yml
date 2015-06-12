@@ -27,6 +27,9 @@ MrcMorales\TyreBundle\Entity\Tyre:
             length: 255
         description:
             type: text
+        sapCode:
+            type: string
+            length: 255
         winter:
             type: boolean
         runflat:

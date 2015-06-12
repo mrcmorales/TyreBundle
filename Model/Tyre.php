@@ -35,6 +35,11 @@ class Tyre extends AbstractBase
     protected $description;
 
     /**
+     * @var string
+     */
+    protected $sapCode;
+
+    /**
      * @var Width
      */
     protected $width;
@@ -130,6 +135,46 @@ class Tyre extends AbstractBase
     public function setName($name)
     {
         $this->name = $name;
+
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getDescription()
+    {
+        return $this->description;
+    }
+
+    /**
+     * @param $description
+     *
+     * @return Tyre
+     */
+    public function setDescription($description)
+    {
+        $this->description = $description;
+
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getSapCode()
+    {
+        return $this->sapCode;
+    }
+
+    /**
+     * @param $sapCode
+     *
+     * @return Tyre
+     */
+    public function setSapCode($sapCode)
+    {
+        $this->sapCode = $sapCode;
 
         return $this;
     }
