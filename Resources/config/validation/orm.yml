@@ -4,6 +4,8 @@ MrcMorales\TyreBundle\Entity\Category:
             - NotBlank: ~
 
 MrcMorales\TyreBundle\Entity\Brand:
+    constraints:
+        - Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity: name
     properties:
         name:
             - NotBlank: ~
