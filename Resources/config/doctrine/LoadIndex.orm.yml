@@ -1,24 +1,6 @@
 MrcMorales\TyreBundle\Entity\LoadIndex:
     type: mappedSuperclass
-    gedmo:
-        soft_deleteable:
-            field_name: deletedAt
-            time_aware: false
     fields:
-        createdAt:
-            type: datetime
-            gedmo:
-                timestampable:
-                    on: create
-        updatedAt:
-            type: datetime
-            nullable: true
-            gedmo:
-                timestampable:
-                    on: update
-        deletedAt:
-            type: datetime
-            nullable: true
         value:
             type: string
             length: 255
