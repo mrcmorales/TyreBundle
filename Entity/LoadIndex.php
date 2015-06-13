@@ -1,6 +1,7 @@
 <?php
+
 /**
- * Tyre Bundle for Symfony2
+ * Tyre Bundle for Symfony2.
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -17,7 +18,7 @@ namespace MrcMorales\TyreBundle\Entity;
 use MrcMorales\TyreBundle\Model\LoadIndex as BaseLoadIndex;
 
 /**
- * LoadIndex
+ * LoadIndex.
  */
 class LoadIndex extends BaseLoadIndex
 {

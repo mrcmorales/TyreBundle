@@ -1,6 +1,7 @@
 <?php
+
 /**
- * Tyre Bundle for Symfony2
+ * Tyre Bundle for Symfony2.
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -15,12 +16,12 @@
 namespace MrcMorales\TyreBundle\Model;
 
 /**
- * Tyre
+ * Tyre.
  */
 class Tyre extends AbstractBase
 {
     /**
-     * @var integer
+     * @var int
      */
     protected $ean;
 
@@ -65,12 +66,12 @@ class Tyre extends AbstractBase
     protected $loadIndex;
 
     /**
-     * @var boolean
+     * @var bool
      */
     protected $runflat;
 
     /**
-     * @var boolean
+     * @var bool
      */
     protected $winter;
 
@@ -80,7 +81,7 @@ class Tyre extends AbstractBase
     protected $noiseClass;
 
     /**
-     * @var integer
+     * @var int
      */
     public $noise;
 

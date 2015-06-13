@@ -1,6 +1,7 @@
 <?php
+
 /**
- * Tyre Bundle for Symfony2
+ * Tyre Bundle for Symfony2.
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -18,7 +19,7 @@ use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Compiler\CompilerPassInterface;
 
 /**
- * Registers the additional validators according to the storage
+ * Registers the additional validators according to the storage.
  *
  * @author Christophe Coevoet <stof@notk.org>
  */
