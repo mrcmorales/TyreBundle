@@ -27,3 +27,9 @@ MrcMorales\TyreBundle\Entity\Tyre:
         noiseClass:
             type: string
             length: 255
+        reinforced:
+            type: boolean
+        season:
+            type: integer
+        rollingResistance:
+            type: integer

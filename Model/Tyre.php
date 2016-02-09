@@ -83,7 +83,7 @@ class Tyre extends AbstractBase
     /**
      * @var int
      */
-    public $noise;
+    protected $noise;
 
     /**
      * @var string
@@ -99,6 +99,27 @@ class Tyre extends AbstractBase
      * @var Family
      */
     protected $family;
+
+    /**
+     * @var bool
+     */
+    protected $reinforced;
+
+    /**
+     * @var int
+     */
+    protected $season;
+
+    /**
+     * @var int
+     */
+    protected $rollingResistance;
+
+    /**
+     *
+     * Methods
+     *
+     */
 
     /**
      * @return string
@@ -416,6 +437,66 @@ class Tyre extends AbstractBase
     public function setFamily(Family $family)
     {
         $this->family = $family;
+
+        return $this;
+    }
+
+    /**
+     * @return boolean
+     */
+    public function getReinforced()
+    {
+        return $this->reinforced;
+    }
+
+    /**
+     * @param boolean $reinforced
+     *
+     * @return Tyre
+     */
+    public function setReinforced($reinforced)
+    {
+        $this->reinforced = $reinforced;
+
+        return $this;
+    }
+
+    /**
+     * @return int
+     */
+    public function getSeason()
+    {
+        return $this->season;
+    }
+
+    /**
+     * @param int $season
+     *
+     * @return Tyre
+     */
+    public function setSeason($season)
+    {
+        $this->season = $season;
+
+        return $this;
+    }
+
+    /**
+     * @return int
+     */
+    public function getRollingResistance()
+    {
+        return $this->rollingResistance;
+    }
+
+    /**
+     * @param int $rollingResistance
+     *
+     * @return Tyre
+     */
+    public function setRollingResistance($rollingResistance)
+    {
+        $this->rollingResistance = $rollingResistance;
 
         return $this;
     }
