@@ -2,16 +2,13 @@
 
 /**
  * Tyre Bundle for Symfony2.
- *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
- *
  * Feel free to edit as you please, and have fun.
  *
  * @author: Marc Morales Valldepérez <marcmorales83@gmail.com>
- *
- * Date: 09/02/15
- * Time: 17:23
+ *        Date: 09/02/15
+ *        Time: 17:23
  */
 namespace MrcMorales\TyreBundle\Model;
 
@@ -116,9 +113,8 @@ class Tyre extends AbstractBase
     protected $rollingResistance;
 
     /**
-     *
      * Methods
-     *
+
      */
 
     /**
@@ -276,7 +272,7 @@ class Tyre extends AbstractBase
      */
     public function setSpeedRating(SpeedRating $speedRating)
     {
-        $this->speedRating  = $speedRating;
+        $this->speedRating = $speedRating;
 
         return $this;
     }
@@ -499,5 +495,20 @@ class Tyre extends AbstractBase
         $this->rollingResistance = $rollingResistance;
 
         return $this;
+    }
+
+    /**
+     * Get tyre model short format "{WIDHT}/{PROFILE} R{DIAMETER} {LOAD} {SPEED}"
+     *
+     * @return string
+     */
+    public function getShortModelString()
+    {
+        return
+            $this->getWidth()->getValue() .
+            '/' . $this->getProfile()->getValue() .
+            ' R' . $this->getDiameter()->getValue() .
+            ' ' . $this->getLoadIndex()->getValue() .
+            ' ' . $this->getSpeedRating()->getValue();
     }
 }
