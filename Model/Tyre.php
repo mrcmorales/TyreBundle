@@ -12,6 +12,8 @@
  */
 namespace MrcMorales\TyreBundle\Model;
 
+use MrcMorales\TyreBundle\Enum\SeasonTyreTypeEnum;
+
 /**
  * Tyre.
  */
@@ -66,11 +68,6 @@ class Tyre extends AbstractBase
      * @var bool
      */
     protected $runflat;
-
-    /**
-     * @var bool
-     */
-    protected $winter;
 
     /**
      * @var string
@@ -318,26 +315,6 @@ class Tyre extends AbstractBase
     }
 
     /**
-     * @return bool
-     */
-    public function getWinter()
-    {
-        return $this->winter;
-    }
-
-    /**
-     * @param $winter
-     *
-     * @return Tyre
-     */
-    public function setWinter($winter)
-    {
-        $this->winter = $winter;
-
-        return $this;
-    }
-
-    /**
      * @return string
      */
     public function getNoiseClass()
@@ -440,7 +417,7 @@ class Tyre extends AbstractBase
     /**
      * @return boolean
      */
-    public function getReinforced()
+    public function isReinforced()
     {
         return $this->reinforced;
     }
@@ -458,15 +435,7 @@ class Tyre extends AbstractBase
     }
 
     /**
-     * @return int
-     */
-    public function getSeason()
-    {
-        return $this->season;
-    }
-
-    /**
-     * @param int $season
+     * @param int $season Season
      *
      * @return Tyre
      */
@@ -495,6 +464,30 @@ class Tyre extends AbstractBase
         $this->rollingResistance = $rollingResistance;
 
         return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function isSummerType()
+    {
+        return SeasonTyreTypeEnum::SUMMER === $this->season;
+    }
+
+    /**
+     * @return bool
+     */
+    public function isWinterType()
+    {
+        return SeasonTyreTypeEnum::WINTER === $this->season;
+    }
+
+    /**
+     * @return bool
+     */
+    public function isAllSeasonType()
+    {
+        return SeasonTyreTypeEnum::ALL_SEASON === $this->season;
     }
 
     /**
