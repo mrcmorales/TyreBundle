@@ -18,6 +18,7 @@ MrcMorales\TyreBundle\Entity\Tyre:
         fuelClass:
             type: string
             length: 255
+            nullable: true
         wetClass:
             type: string
             length: 255
