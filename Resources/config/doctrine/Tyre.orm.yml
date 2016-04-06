@@ -31,4 +31,5 @@ MrcMorales\TyreBundle\Entity\Tyre:
         season:
             type: integer
         rollingResistance:
-            type: integer
+            type: string
+            length: 255

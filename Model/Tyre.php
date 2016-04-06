@@ -105,7 +105,7 @@ class Tyre extends AbstractBase
     protected $season;
 
     /**
-     * @var int
+     * @var string
      */
     protected $rollingResistance;
 
@@ -462,7 +462,7 @@ class Tyre extends AbstractBase
     }
 
     /**
-     * @return int
+     * @return string
      */
     public function getRollingResistance()
     {
@@ -470,7 +470,7 @@ class Tyre extends AbstractBase
     }
 
     /**
-     * @param int $rollingResistance
+     * @param string $rollingResistance
      *
      * @return Tyre
      */
