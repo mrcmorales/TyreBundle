@@ -111,7 +111,6 @@ class Tyre extends AbstractBase
 
     /**
      * Methods
-
      */
 
     /**
@@ -423,6 +422,14 @@ class Tyre extends AbstractBase
     }
 
     /**
+     * @return boolean
+     */
+    public function getReinforced()
+    {
+        return $this->reinforced;
+    }
+
+    /**
      * @param boolean $reinforced
      *
      * @return Tyre
@@ -432,6 +439,14 @@ class Tyre extends AbstractBase
         $this->reinforced = $reinforced;
 
         return $this;
+    }
+
+    /**
+     * @return boolean
+     */
+    public function getSeason()
+    {
+        return $this->season;
     }
 
     /**
@@ -465,6 +480,7 @@ class Tyre extends AbstractBase
 
         return $this;
     }
+
 
     /**
      * @return bool
