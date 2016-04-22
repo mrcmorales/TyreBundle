@@ -27,6 +27,7 @@ MrcMorales\TyreBundle\Entity\Tyre:
         noiseClass:
             type: string
             length: 255
+            nullable: true
         reinforced:
             type: boolean
         season:
