@@ -36,3 +36,4 @@ MrcMorales\TyreBundle\Entity\Tyre:
         rollingResistance:
             type: string
             length: 255
+            nullable: true
