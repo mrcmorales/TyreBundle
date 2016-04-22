@@ -30,6 +30,7 @@ MrcMorales\TyreBundle\Entity\Tyre:
             nullable: true
         reinforced:
             type: boolean
+            nullable: true
         season:
             type: integer
         rollingResistance:
